@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espólio do Aventureiro</title>
+    <!--Icone do site-->
+    <link rel="icon" href="./assets/images/icons/tesouro.png" type="image" size="16x16">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <img src="./assets/images/icons/tesouro2.png" alt="Logo da página" width="54" height="54" class="d-inline-block me-3">
+            <h1 class="navbar-brand m-0 section-title">Espólio do Aventureiro</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-loja" class="nav-link">
+                            <i class="bi bi-house me-1"></i>
+                            Sobre a Loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#catalogo" class="nav-link">
+                            <i class="bi bi-journal-text me-1"></i>
+                            Nosso catalogo
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-envelope me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-loja">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./assets/images/slides/slide1.jpg" class="d-block w-100" alt="Foto do espaço interno da loja">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/images/slides/slide2.jpg" class="d-block w-100" alt="Foto de uma mesa com jogos">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/images/slides/slide3.jpg" class="d-block w-100" alt="Foto de um evento">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pd-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./assets/images/Loja.jpg" class="d-block w-100 rounded " alt="Foto do espaço interno da loja">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a Loja</span></h2>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel magni illo, tempora quisquam nobis nisi! Ducimus quis aperiam, excepturi minima sequi doloremque quos labore. Eius veritatis autem sapiente quae at error, sequi asperiores tempora harum?
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quam, laborum cupiditate doloribus alias impedit pariatur porro commodi non voluptatem error modi officiis illum nemo repellat sequi dolorum dolorem omnis hic aperiam. Nobis, distinctio fugit.
+                            </p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para rodas <span class="text-colored">as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./assets/images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4 text-center">
+                            Aniversários
+                        </h3> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, delectus unde. Magnam minima tempore recusandae!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/images/eventos/torneio.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4 text-center">
+                            Torneios
+                        </h3> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, delectus unde. Magnam minima tempore recusandae!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4 text-center">
+                            Confraternizações
+                        </h3> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, delectus unde. Magnam minima tempore recusandae!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="catalogo" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nosso <span class="text-colored">Catalogo</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-catalogo">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#cartas" class="fw-bold text-start nav-link text-colored active">Jogos de Cartas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#rpgs" class="fw-bold text-start nav-link text-colored ">Rpgs</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#board-games" class="fw-bold text-start nav-link text-colored">Board Games</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#comidas" class="fw-bold text-start nav-link text-colored">Comidas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas" class="fw-bold text-start nav-link text-colored">Bebidas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane" id="cartas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/Magic booster (1).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Magic booster</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/Magic booster (2).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Magic booster</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/Magic booster (3).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Magic booster</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/Magic booster (4).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Magic booster</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/Pokemon tcg booster (1).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Pokemon tcg booster</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/Pokemon tcg booster (2).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Pokemon tcg booster</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/Pokemon tcg booster (3).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Pokemon tcg booster</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/Pokemon tcg booster (4).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Pokemon tcg booster</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/yu-gi-oh booster pack (1).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Yu-gi-oh booster pack</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/yu-gi-oh booster pack (2).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Yu-gi-oh booster pack</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/yu-gi-oh booster pack (3).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Yu-gi-oh booster pack</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/cartas/yu-gi-oh booster pack (4).jpg" alt="Pacote de cartas"/>
+                                        <h5 class="text-colored fw-bold mt-2">Yu-gi-oh booster pack</h5>
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane active" id="rpgs">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/rpgs/Tormenta20.png" alt="Tormenta20"/>
+                                        <h5 class="text-colored fw-bold mt-2">Tormenta20</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/rpgs/Vampiro-a-mascara.jpg" alt="Vampiro-a-mascara"/>
+                                        <h5 class="text-colored fw-bold mt-2">Vampiro a mascara</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="board-games">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/board games/carcassonne-boxart.jpg" alt="Carcassonne"/>
+                                        <h5 class="text-colored fw-bold mt-2">Carcassonne</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/board games/catan-boxart.jpg" alt="Catan"/>
+                                        <h5 class="text-colored fw-bold mt-2">Catan</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/board games/codenames-boxart.jpg" alt="Codenames"/>
+                                        <h5 class="text-colored fw-bold mt-2">Codenames</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/board games/social-thumbnail-mysterium.jpg" alt="Mysterium"/>
+                                        <h5 class="text-colored fw-bold mt-2">Mysterium</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/board games/spacebase-boxart.jpg" alt="Spacebase"/>
+                                        <h5 class="text-colored fw-bold mt-2">Spacebase</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="comidas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/pratos/Pao-cthulhu.png" alt="Pao cthulhu"/>
+                                        <h5 class="text-colored fw-bold mt-2">Pao Cthulhu</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/bebidas/coca-cola.jpg" alt="Coca-cola"/>
+                                        <h5 class="text-colored fw-bold mt-2">Coca-cola</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./assets/images/Catalogo/bebidas/suco.jpg" alt="Suco de laranja"/>
+                                        <h5 class="text-colored fw-bold mt-2">Sucos</h5> 
+                                        <p>
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">
+                        Fale <span class="text-colored">Conosco</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                        </div>
+                        <p>
+                            Rua Teste Exemplo nº 159, Bairro Bootstrap - Aracaju - SE
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Bootstrap Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
